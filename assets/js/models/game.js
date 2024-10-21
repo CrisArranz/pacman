@@ -7,12 +7,22 @@ class Game {
 
   start() {
     this.intervalId = setInterval(() => {
+      this.clear();
+      this.move();
       this.draw();
     }, 1000 / FPS)
   }
 
+  clear () {
+    this.context.clearRect(0, 0, this.context.canvas.width, this.context.canvas.height);
+  }
+
   draw() {
     this.pacman.draw();
+  }
+
+  move() {
+    this.pacman.move();
   }
 
   pause() {

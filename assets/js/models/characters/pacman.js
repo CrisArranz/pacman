@@ -1,4 +1,4 @@
-class Pacman extends AnimatedSprites {
+class Pacman extends Character {
   constructor(context) {
     super(
       context, 
@@ -8,7 +8,7 @@ class Pacman extends AnimatedSprites {
       PACMAN_CONFIGURATION.size, 
       PACMAN_CONFIGURATION.color[0], 
       PACMAN_CONFIGURATION.shape, 
-      PACMAN_CONFIGURATION.images.left
+      PACMAN_CONFIGURATION.images
     )
   }
 }

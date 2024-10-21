@@ -8,6 +8,13 @@ const SHAPES = {
   rectangle: 'rectangle'
 }
 
+const KEY_CODE = {
+  up: 38,
+  down: 40,
+  right: 39,
+  left: 37
+}
+
 const PACMAN_CONFIGURATION = {
   size: SIZES,
   color: ['red'],

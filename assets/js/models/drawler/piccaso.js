@@ -1,5 +1,5 @@
 class Picasso {
-  constructor(context, positionX, positionY, width, height, color, shape, { src, frames, frameIndex }) {
+  constructor(context, positionX, positionY, width, height, color, shape, images) {
     this.context = context;
     this.positionX = positionX;
     this.positionY = positionY;
@@ -8,23 +8,26 @@ class Picasso {
     this.color = color;
     this.shape = shape;
     if (shape === SHAPES.image) {
-      this.image = new Image();
-      this.image.src = src;
-      this.image.frames = frames;
-      this.image.frameIndex = frameIndex;
-      this.image.onload = () => {
-        this.image.isReady = true;
-      }
+      this.image = Object.keys(images).reduce((imagesFinal, direction) => {
+        imagesFinal[direction].src = images[direction].src;
+        imagesFinal[direction].frames = images[direction].frames;
+        imagesFinal[direction].frameIndex = images[direction].frameIndex;
+        imagesFinal[direction].directionSprites = 1;
+        imagesFinal[direction].onload = () => {
+          imagesFinal[direction].isReady = true;
+        }
+        return imagesFinal;
+      }, { up: new Image(), down: new Image(), right: new Image(), left: new Image()});
     }
   }
 
-  draw() {
+  draw(movement) {
     switch(this.shape){
       case SHAPES.rectangle:
         this.drawRectangles();
         break;
       case SHAPES.image:
-        this.drawImages();
+        this.drawImages(movement);
         break;
       default:
         break;
@@ -35,14 +38,14 @@ class Picasso {
     this.context.fillRect(this.positionX, this.positionY, this.width, this.height);
   }
 
-  drawImages() {
-    if (this.image.isReady) {
+  drawImages(movement) {
+    if (this.image[movement].isReady) {
       this.context.drawImage(
-        this.image,
-        (this.image.width / this.image.frames) * this.image.frameIndex,
+        this.image[movement],
+        (this.image[movement].width / this.image[movement].frames) * this.image[movement].frameIndex,
         0,
-        this.image.width / this.image.frames,
-        this.image.height,
+        this.image[movement].width / this.image[movement].frames,
+        this.image[movement].height,
         this.positionX,
         this.positionY,
         this.width,

@@ -6,5 +6,13 @@ window.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("pause-btn").addEventListener("click", () => {
     game.pause();
-  })
+  });
+
+  document.addEventListener("keydown", (event) => {
+    game.pacman.onKeyDown(event);
+  });
+
+  document.addEventListener("keyup", () => {
+    game.pacman.onKeyUp();
+  });
 });

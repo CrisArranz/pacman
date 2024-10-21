@@ -3,8 +3,16 @@ body {
   background-color: black;
 }
 
-section {
+.container__board {
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__actions {
   display: flex;
   justify-content: center;
   align-items: center;
