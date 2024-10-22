@@ -5,9 +5,26 @@ class Game {
     this.pacman = new Pacman(this.context);
 
     this.maze = [
+      //Pared externa lateral izquierdo
       new Wall(this.context, 40, 40, { width: WALLS_CONFIGURATION.size, height: 240 }),
       new Wall(this.context, 40, 320, { width: WALLS_CONFIGURATION.size, height: 160 }),
-      new Wall(this.context, 40, 520, { width: WALLS_CONFIGURATION.size, height: 240 }),,
+      new Wall(this.context, 40, 520, { width: WALLS_CONFIGURATION.size, height: 240 }),
+      //Pared externa lateral derecho
+      new Wall(this.context, 760, 40, { width: WALLS_CONFIGURATION.size, height: 240 }),
+      new Wall(this.context, 760, 320, { width: WALLS_CONFIGURATION.size, height: 160 }),
+      new Wall(this.context, 760, 520, { width: WALLS_CONFIGURATION.size, height: 240 }),
+      //Pared externa inferior
+      new Wall(this.context, 40, 720, { width: 360 , height: WALLS_CONFIGURATION.size }),
+      new Wall(this.context, 440, 720, { width: 360 , height: WALLS_CONFIGURATION.size }),
+      //Pared externa superior
+      new Wall(this.context, 40, 40, { width: 360 , height: WALLS_CONFIGURATION.size }),
+      new Wall(this.context, 440, 40, { width: 360 , height: WALLS_CONFIGURATION.size }),
+      //Jaula central
+      new Wall(this.context, 320, 320, { width: WALLS_CONFIGURATION.size, height: 160 }),
+      new Wall(this.context, 480, 320, { width: WALLS_CONFIGURATION.size, height: 160 }),
+      new Wall(this.context, 320, 440, { width: 200 , height: WALLS_CONFIGURATION.size }),
+      new Wall(this.context, 320, 320, { width: 80 , height: WALLS_CONFIGURATION.size }),
+      new Wall(this.context, 440, 320, { width: 80 , height: WALLS_CONFIGURATION.size }),
     ];
   }
 

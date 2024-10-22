@@ -20,8 +20,8 @@ const PACMAN_CONFIGURATION = {
   color: ['red'],
   shape: SHAPES.image,
   startPosition: {
-    x: 0,
-    y: 0
+    x: 400,
+    y: 680
   },
   images: {
     up: {

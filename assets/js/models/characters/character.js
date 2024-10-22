@@ -28,7 +28,7 @@ class Character extends AnimatedSprites {
   }
 
   move() {
-    if (this.tickVelocity > 15) {
+    if (this.tickVelocity > 10) {
       this.tickVelocity = 0
       this.positionX += this.velocityX;
       this.positionY += this.velocityY;
@@ -37,7 +37,6 @@ class Character extends AnimatedSprites {
   }
 
   checkCollisions(maze) {
-
     if (this.positionX <= 0) {
       this.positionX = 0;
     }
@@ -53,6 +52,7 @@ class Character extends AnimatedSprites {
     if (this.positionY + this.height >= this.context.canvas.height) {
       this.positionY = this.context.canvas.height - this.height;
     }
+
     const wall = maze.find(wall => wall.checkCollision(this));
     
     if (wall) {
