@@ -20,8 +20,8 @@ const PACMAN_CONFIGURATION = {
   color: ['red'],
   shape: SHAPES.image,
   startPosition: {
-    x: 400,
-    y: 600
+    x: 0,
+    y: 0
   },
   images: {
     up: {
@@ -53,7 +53,7 @@ const GHOST_CONFIGURATION = {
   shape: SHAPES.image
 }
 
-const OBTACLE_CONFIGURATION = {
+const WALLS_CONFIGURATION = {
   size: SIZES,
   color: ['white'],
   shape: SHAPES.rectangle

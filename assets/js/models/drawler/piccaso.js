@@ -35,7 +35,10 @@ class Picasso {
   }
 
   drawRectangles() {
+    this.context.save();
+    this.context.fillStyle = this.color;
     this.context.fillRect(this.positionX, this.positionY, this.width, this.height);
+    this.context.restore();
   }
 
   drawImages(movement) {
