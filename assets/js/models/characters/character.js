@@ -72,6 +72,13 @@ class Character extends AnimatedSprites {
         this.velocityY = 0;
       }
     }
+
+    this.snapToGrid();
+  }
+
+  snapToGrid() {
+    this.positionX = Math.round(this.positionX);
+    this.positionY = Math.round(this.positionY);
   }
 
   onKeyDown({ keyCode }) {

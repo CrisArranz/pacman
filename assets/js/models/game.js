@@ -38,10 +38,12 @@ class Game {
       //Pared intermedia inferior
       new Wall(this.context, 120, 680, { width: WALLS_CONFIGURATION.getSizeWalls(6) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 400, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 400, 640, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 480, 680, { width: WALLS_CONFIGURATION.getSizeWalls(6) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       //Pared intermedia superior
       new Wall(this.context, 120, 120, { width: WALLS_CONFIGURATION.getSizeWalls(6) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 400, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 400, 160, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 480, 120, { width: WALLS_CONFIGURATION.getSizeWalls(6) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       //Pared intermedia lateral izquierdo
       new Wall(this.context, 160, 160, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(4) }),
@@ -68,18 +70,17 @@ class Game {
       new Wall(this.context, 560, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2) }),
       new Wall(this.context, 560, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2) }),
       //Pared interna lateral inferior
-      new Wall(this.context, 320, 600, { width: WALLS_CONFIGURATION.getSizeWalls(5), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 320, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 480, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 320, 560, { width: WALLS_CONFIGURATION.getSizeWalls(5), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 320, 600, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 480, 600, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       //Pared interna lateral superior
-      new Wall(this.context, 320, 200, { width: WALLS_CONFIGURATION.getSizeWalls(5), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 320, 240, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 480, 240, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 320, 240, { width: WALLS_CONFIGURATION.getSizeWalls(5), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 320, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 480, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       //Jaula central
       new Wall(this.context, 320, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(5) }),
       new Wall(this.context, 480, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(5) }),
       new Wall(this.context, 320, 480, { width: WALLS_CONFIGURATION.getSizeWalls(5) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 400, 520, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 320, 320, { width: WALLS_CONFIGURATION.getSizeWalls(2) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 440, 320, { width: WALLS_CONFIGURATION.getSizeWalls(2) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
     ];
