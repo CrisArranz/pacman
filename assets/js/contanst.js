@@ -21,7 +21,7 @@ const PACMAN_CONFIGURATION = {
   shape: SHAPES.image,
   startPosition: {
     x: 400,
-    y: 680
+    y: 720
   },
   images: {
     up: {
@@ -55,6 +55,7 @@ const GHOST_CONFIGURATION = {
 
 const WALLS_CONFIGURATION = {
   size: SIZES,
+  getSizeWalls: (n) => SIZES * n,
   color: ['white'],
   shape: SHAPES.rectangle
 }
