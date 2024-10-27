@@ -63,6 +63,12 @@ const WALLS_CONFIGURATION = {
 
 const DOTS_CONFIGURATION = {
   radius: SIZES / 8,
-  color: ['white'],
+  color: ['#A121EB'],
+  shape: SHAPES.circle
+}
+
+const POWERUP_CONFIGURATION = {
+  radius: SIZES / 4,
+  color: ['gold'],
   shape: SHAPES.circle
 }

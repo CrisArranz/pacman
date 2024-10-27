@@ -1,12 +1,12 @@
 class Item extends NonAnimatedSprites {
-  constructor(context, positionX, positionY, { radius }) {
+  constructor(context, positionX, positionY, { radius, color }) {
     super(
       context,
       positionX,
       positionY,
       undefined,
       undefined,
-      DOTS_CONFIGURATION.color[0],
+      color,
       SHAPES.circle,
       radius
     )

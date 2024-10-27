@@ -1,12 +1,12 @@
 class Wall extends NonAnimatedSprites {
-  constructor(context, positionX, positionY, { width, height }) {
+  constructor(context, positionX, positionY, { width, height, color }) {
     super(
       context,
       positionX,
       positionY,
       width,
       height,
-      WALLS_CONFIGURATION.color[0],
+      color ?? WALLS_CONFIGURATION.color[0],
       WALLS_CONFIGURATION.shape
     );
   }
