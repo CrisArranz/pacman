@@ -5,7 +5,8 @@ const TICK_ANIMATION = 7.5;
 const SIZES = 40;
 const SHAPES = {
   image: 'image',
-  rectangle: 'rectangle'
+  rectangle: 'rectangle',
+  circle: 'circle'
 }
 
 const KEY_CODE = {
@@ -58,4 +59,10 @@ const WALLS_CONFIGURATION = {
   getSizeWalls: (n) => SIZES * n,
   color: ['white'],
   shape: SHAPES.rectangle
+}
+
+const DOTS_CONFIGURATION = {
+  radius: SIZES / 8,
+  color: ['white'],
+  shape: SHAPES.circle
 }

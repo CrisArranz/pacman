@@ -1,5 +1,5 @@
 class Picasso {
-  constructor(context, positionX, positionY, width, height, color, shape, images) {
+  constructor(context, positionX, positionY, width, height, color, shape, images, radius) {
     this.context = context;
     this.positionX = positionX;
     this.positionY = positionY;
@@ -19,6 +19,10 @@ class Picasso {
         return imagesFinal;
       }, { up: new Image(), down: new Image(), right: new Image(), left: new Image()});
     }
+
+    if (shape === SHAPES.circle) {
+      this.radius = radius;
+    }
   }
 
   draw(movement) {
@@ -29,6 +33,9 @@ class Picasso {
       case SHAPES.image:
         this.drawImages(movement);
         break;
+      case SHAPES.circle:
+        this.drawCircles();
+        break;
       default:
         break;
     }
@@ -38,6 +45,17 @@ class Picasso {
     this.context.save();
     this.context.fillStyle = this.color;
     this.context.fillRect(this.positionX, this.positionY, this.width, this.height);
+    this.context.restore();
+  }
+
+  drawCircles() {
+    this.context.save();
+    this.context.beginPath();
+    this.context.arc(this.positionX, this.positionY, this.radius, 0, 2 * Math.PI);
+    this.context.fillStyle = this.color;
+    this.context.fill();
+    this.context.strokeStyle = this.color;
+    this.context.stroke();
     this.context.restore();
   }
 
