@@ -107,7 +107,7 @@ class Game {
       new Wall(this.context, 240, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
       new Wall(this.context, 280, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
       new Wall(this.context, 320, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
-      new Wall(this.context, 400, 140, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 400, 160, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 400, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 480, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
       new Wall(this.context, 520, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
@@ -196,6 +196,9 @@ class Game {
       new Wall(this.context, 360, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
       new Wall(this.context, 440, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
     ];
+
+    this.tickFruit = 0;
+
     this.fill();
   }
 
@@ -206,6 +209,7 @@ class Game {
       this.move();
       this.collisions();
       this.draw();
+      this.addFruit();
       this.win();
     }, 1000 / FPS);
   }
@@ -237,6 +241,31 @@ class Game {
         item.hasEaten()
       }
     });
+  }
+
+  addFruit() {
+    if (this.tickFruit > 300){
+      this.tickFruit = 0;
+      const row = Object.keys(AVAILABLE_POSITIONS.row);
+      const randomRow = Math.floor(row.length * Math.random());
+      const randomCol = Math.floor(AVAILABLE_POSITIONS.row[row[randomRow]].length * Math.random());
+
+      const position = this.items.find(item => 
+        (
+          item.positionX === (AVAILABLE_POSITIONS.row[row[randomRow]][randomCol] + 20) && 
+          item.positionY === (+row[randomRow] + 20)
+        ) || 
+        (
+          item.positionX === AVAILABLE_POSITIONS.row[row[randomRow]][randomCol] && 
+          item.positionY === +row[randomRow]
+        )
+      )
+      if (!position){
+        this.items.push(new Fruit(this.context, AVAILABLE_POSITIONS.row[row[randomRow]][randomCol], +row[randomRow]))
+      }
+
+    }
+    this.tickFruit++;
   }
 
   fill() {
