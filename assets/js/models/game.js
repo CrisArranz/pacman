@@ -569,6 +569,7 @@ class Game {
   }
 
   win() {
-    if (!this.items.length) window.location.reload();
+    const dots = this.items.filter(item => item instanceof Dot ||item instanceof PowerUp);
+    if (!dots.length) window.location.reload();
   }
 }
