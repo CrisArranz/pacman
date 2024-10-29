@@ -10,6 +10,12 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "pacman-heads";
+  src: url("head.otf") format('truetype');
+  font-style: normal;
+}
+
 body {
   margin: 0;
   background-color: black;
@@ -30,20 +36,35 @@ body {
   align-items: center;
 }
 
-.container__score {
-  font-family: 'pacman-letter';
+.container__stadistics {
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  margin-top: 3rem;
   color: white;
+  row-gap: 2.5rem;
+}
+
+.container__stadistics__score, .container__stadistics__lives {
+  font-family: 'pacman-letter';
   font-size: 2rem;
   font-weight: bold;
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 0.5rem;
-  align-self: flex-start;
-  margin-top: 3rem;
+  row-gap: 1rem;
 }
 
-.container__score > #score {
+.container__stadistics__lives > #lives {
+  font-family: 'pacman-heads';
+  color: yellow;
+  min-width: 90px;
+  text-align: start;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.container__stadistics__score > #score {
   text-align: center;
   font-family: 'pacman-numbers';
   border: 1px solid white;

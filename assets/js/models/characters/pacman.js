@@ -10,5 +10,7 @@ class Pacman extends Character {
       PACMAN_CONFIGURATION.shape, 
       PACMAN_CONFIGURATION.images
     )
+
+    this.lives = 3;
   }
 }

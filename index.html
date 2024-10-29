@@ -9,7 +9,16 @@
   </head>
   <body>
     <section class="container__board">
-      <section class="container__score"><span class="container__score--message">SCORE</span><span id="score"></span></section>
+      <container class="container__stadistics">
+        <section class="container__stadistics__score">
+          <span class="container__stadistics__score--message">SCORE</span>
+          <span id="score"></span>
+        </section>
+        <section class="container__stadistics__lives">
+          <span class="container__stadistics__lives--message">LIVES</span>
+          <span id="lives"></span>
+        </section>
+      </container>
       <canvas id="pacman-board" width="840" height="840"></canvas>
       <!-- <section class="container__actions">
         <button id="start-btn">INICIAR</button>

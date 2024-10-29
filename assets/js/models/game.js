@@ -201,7 +201,11 @@ class Game {
 
     this.points = 0;
     this.score = document.getElementById("score");
+    this.lives = document.getElementById("lives");
     this.score.innerText = this.points.toString().padStart(7, '0');
+    this.lives.innerText = [...Array(this.pacman.lives).fill('c')].join().replaceAll(',', '  ');
+
+    console.log()
 
     this.fill();
   }
