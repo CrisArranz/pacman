@@ -51,7 +51,34 @@ const PACMAN_CONFIGURATION = {
 
 const GHOST_CONFIGURATION = {
   size: SIZES,
-  color: ['red', 'blue', 'orange', 'pink', 'white'],
+  color: ['red', 'cian', 'orange', 'pink'],
+  images: {
+    red: {
+      src: './assets/images/ghost/ghost-red.png',
+      frames: 8,
+      frameIndex: 0
+    },
+    orange: { 
+      src: './assets/images/ghost/ghost-orange.png',
+      frames: 8,
+      frameIndex: 0
+    },
+    pink: {
+      src: './assets/images/ghost/ghost-pink.png',
+      frames: 8,
+      frameIndex: 0
+    },
+    cian: {
+      src: './assets/images/ghost/ghost-cian.png',
+      frames: 8,
+      frameIndex: 0
+    },
+    dead: {
+      src: './assets/images/ghost/ghost-dead.png',
+      frames: 4,
+      frameIndex: 0
+    }
+  },
   shape: SHAPES.image
 }
 
@@ -74,6 +101,14 @@ const POWERUP_CONFIGURATION = {
   shape: SHAPES.circle
 }
 
+const AVAILABLE_POSITIONS_GHOSTS = {
+  row: {
+    360: [360, 400, 440],
+    400: [360, 400, 440],
+    440: [360, 400, 440]
+  }
+}
+
 const AVAILABLE_POSITIONS = {
   row : {
     0: [40, 80, 120, 160, 200, 240, 280, 320, 360, 400, 440, 480, 520, 560, 600, 640, 680, 720, 760],
@@ -91,7 +126,7 @@ const AVAILABLE_POSITIONS = {
     480: [0, 80, 120, 160, 200, 280, 520, 600, 640, 680, 720, 800],
     520: [0, 40, 80, 200, 240, 280, 320, 360, 400, 440, 480, 520, 560, 600, 720, 760, 800],
     560: [0, 80, 120, 200, 280, 520, 600, 680, 720, 800],
-    600: [0, 120, 200, 280, 360, 400, 440, 480, 520, 560, 600, 680, 800],
+    600: [0, 120, 200, 280, 360, 400, 440, 520, 600, 680, 800],
     640: [0, 80, 120, 200, 240, 280, 320, 360, 440, 480, 520, 560, 600, 680, 720, 800],
     680: [0, 80, 360, 440, 720, 800],
     720: [0, 80, 120, 160, 200, 240, 280, 320, 360, 400, 440, 480, 520, 560, 600, 640, 680, 720, 800],

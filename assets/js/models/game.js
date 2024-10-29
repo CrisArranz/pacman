@@ -4,6 +4,8 @@ class Game {
 
     this.pacman = new Pacman(this.context);
 
+    this.ghosts = [];
+
     this.items = [];
 
     this.maze = [
@@ -211,6 +213,7 @@ class Game {
   }
 
   start() {
+    this.addGhost();
     this.intervalId = setInterval(() => {
       this.clear();
       this.clearItems();
@@ -234,6 +237,9 @@ class Game {
     this.maze.forEach(wall => wall.draw());
     this.items.forEach(item => {
       item.draw()
+    });
+    this.ghosts.forEach(ghost => {
+      ghost.draw()
     });
     this.pacman.draw();
   }
@@ -565,6 +571,10 @@ class Game {
     this.items.push(new Dot(this.context, 700, 820));
     this.items.push(new Dot(this.context, 740, 820));
     this.items.push(new Dot(this.context, 780, 820));
+  }
+
+  addGhost() {
+    this.ghosts.push(new Ghost(this.context, 360, 360))
   }
 
   pause() {

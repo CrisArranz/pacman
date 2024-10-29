@@ -17,7 +17,17 @@ class Picasso {
           imagesFinal[direction].isReady = true;
         }
         return imagesFinal;
-      }, { up: new Image(), down: new Image(), right: new Image(), left: new Image()});
+      }, { 
+        up: new Image(), 
+        down: new Image(), 
+        right: new Image(), 
+        left: new Image(), 
+        red: new Image(), 
+        cian: new Image(), 
+        pink: new Image(), 
+        orange: new Image(), 
+        dead: new Image()
+      });
     }
 
     if (shape === SHAPES.circle) {
