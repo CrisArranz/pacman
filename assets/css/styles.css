@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "pacman-letter";
+  src: url("letters.ttf") format('truetype');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "pacman-numbers";
+  src: url("numbers.ttf") format('truetype');
+  font-style: normal;
+}
+
 body {
   margin: 0;
   background-color: black;
@@ -6,7 +18,6 @@ body {
 .container__board {
   height: 100vh;
   display: flex;
-  flex-direction: column;
   gap: 10px;
   justify-content: center;
   align-items: center;
@@ -19,6 +30,27 @@ body {
   align-items: center;
 }
 
+.container__score {
+  font-family: 'pacman-letter';
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+  align-self: flex-start;
+  margin-top: 3rem;
+}
+
+.container__score > #score {
+  text-align: center;
+  font-family: 'pacman-numbers';
+  border: 1px solid white;
+  padding: 10px;
+}
+
 canvas {
   border: 40px solid white;
+  margin: auto 0;
 }

@@ -199,6 +199,10 @@ class Game {
 
     this.tickFruit = 0;
 
+    this.points = 0;
+    this.score = document.getElementById("score");
+    this.score.innerText = this.points.toString().padStart(7, '0');
+
     this.fill();
   }
 
@@ -224,8 +228,8 @@ class Game {
 
   draw() {
     this.maze.forEach(wall => wall.draw());
-    this.items.forEach(point => {
-      point.draw()
+    this.items.forEach(item => {
+      item.draw()
     });
     this.pacman.draw();
   }
@@ -238,7 +242,11 @@ class Game {
     this.pacman.checkCollisions(this.maze);
     this.items.forEach(item => {
       if (item.collision(this.pacman)) {
-        item.hasEaten()
+        item.hasEaten();
+        if (item instanceof Fruit) {
+          this.points += 200;
+          this.score.innerText = this.points.toString().padStart(7, '0');
+        }
       }
     });
   }
@@ -246,6 +254,10 @@ class Game {
   addFruit() {
     if (this.tickFruit > 300){
       this.tickFruit = 0;
+      const fruits = this.items.filter(item => item instanceof Fruit).length;
+
+      if (fruits >= 3) return;
+      
       const row = Object.keys(AVAILABLE_POSITIONS.row);
       const randomRow = Math.floor(row.length * Math.random());
       const randomCol = Math.floor(AVAILABLE_POSITIONS.row[row[randomRow]].length * Math.random());

@@ -55,7 +55,13 @@ class Picasso {
   drawRectangles() {
     this.context.save();
     this.context.fillStyle = this.color;
-    this.context.fillRect(this.positionX, this.positionY, this.width, this.height);
+    this.context.shadowColor = "black";
+    this.context.shadowBlur = 1;
+    this.context.shadowOffsetX = 0;
+    this.context.shadowOffsetY = 0;
+    this.context.fillRect(this.positionX + 1, this.positionY + 1, this.width - 2, this.height - 2);
+    this.context.shadowColor = "transparent";
+    this.context.shadowBlur = 0;
     this.context.restore();
   }
 
