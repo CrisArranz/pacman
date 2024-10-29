@@ -23,6 +23,14 @@ class Picasso {
     if (shape === SHAPES.circle) {
       this.radius = radius;
     }
+
+    if (shape === SHAPES.staticImage) {
+      this.image = new Image();
+      this.image.src = images;
+      this.image.onload = () => {
+        this.image.isReady = true;
+      }
+    }
   }
 
   draw(movement) {
@@ -32,6 +40,9 @@ class Picasso {
         break;
       case SHAPES.image:
         this.drawImages(movement);
+        break;
+      case SHAPES.staticImage:
+        this.drawStaticImages();
         break;
       case SHAPES.circle:
         this.drawCircles();
@@ -67,6 +78,18 @@ class Picasso {
         0,
         this.image[movement].width / this.image[movement].frames,
         this.image[movement].height,
+        this.positionX,
+        this.positionY,
+        this.width,
+        this.height
+      );
+    }
+  }
+
+  drawStaticImages() {
+    if (this.image.isReady) {
+      this.context.drawImage(
+        this.image,
         this.positionX,
         this.positionY,
         this.width,

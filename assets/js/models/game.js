@@ -16,73 +16,185 @@ class Game {
       //Extremo inferior derecha
       new Wall(this.context, 800, 800, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       //Pared externa lateral izquierdo
-      new Wall(this.context, 40, 80, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(5) }),
+      new Wall(this.context, 40, 80, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 40, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 40, 160, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 40, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 40, 240, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 80, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 40, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2) }),
+      new Wall(this.context, 40, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 40, 360, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 80, 360, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 40, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2) }),
-      new Wall(this.context, 40, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(5) }),
+      new Wall(this.context, 40, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 40, 480, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 40, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 40, 600, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 80, 600, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 40, 640, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 40, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 40, 720, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       //Pared externa lateral derecho
-      new Wall(this.context, 760, 80, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(5) }),
+      new Wall(this.context, 760, 80, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 760, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 760, 160, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 760, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 760, 240, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 720, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 760, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2) }),
+      new Wall(this.context, 760, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 760, 360, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 720, 360, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 760, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2) }),
-      new Wall(this.context, 760, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(5) }),
+      new Wall(this.context, 760, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 760, 480, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 760, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 760, 600, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 760, 640, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 760, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 760, 720, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       new Wall(this.context, 720, 600, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       //Pared externa inferior
-      new Wall(this.context, 80, 760, { width: WALLS_CONFIGURATION.getSizeWalls(8) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 440, 760, { width: WALLS_CONFIGURATION.getSizeWalls(8) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 80, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 120, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 160, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 200, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 240, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 280, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 320, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 360, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 440, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 480, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 520, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 560, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 600, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 640, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 680, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 720, 760, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       //Pared externa superior
-      new Wall(this.context, 80, 40, { width: WALLS_CONFIGURATION.getSizeWalls(8) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 440, 40, { width: WALLS_CONFIGURATION.getSizeWalls(8) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 80, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 120, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 160, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 200, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 240, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 280, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 320, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 360, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 440, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 480, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 520, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 560, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 600, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 640, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 680, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 720, 40, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
       //Pared intermedia inferior
-      new Wall(this.context, 120, 680, { width: WALLS_CONFIGURATION.getSizeWalls(6) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
-      new Wall(this.context, 400, 640, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(2) }),
-      new Wall(this.context, 480, 680, { width: WALLS_CONFIGURATION.getSizeWalls(6) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 120, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 160, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 200, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 240, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 280, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 320, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 400, 640, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 400, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 480, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 520, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 560, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 600, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 640, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 680, 680, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
       //Pared intermedia superior
-      new Wall(this.context, 120, 120, { width: WALLS_CONFIGURATION.getSizeWalls(6) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
-      new Wall(this.context, 400, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(2) }),
-      new Wall(this.context, 480, 120, { width: WALLS_CONFIGURATION.getSizeWalls(6) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 120, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 160, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 200, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 240, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 280, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 320, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 400, 140, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 400, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 480, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 520, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 560, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 600, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 640, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 680, 120, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
       //Pared intermedia lateral izquierdo
-      new Wall(this.context, 160, 160, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(4), color: 'blue' }),
+      new Wall(this.context, 160, 160, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 160, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 160, 240, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 160, 280, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
       new Wall(this.context, 120, 280, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 160, 360, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(3), color: 'blue' }),
+      new Wall(this.context, 160, 360, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 160, 400, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 160, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
       new Wall(this.context, 120, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 160, 520, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(4), color: 'blue' }),
+      new Wall(this.context, 160, 520, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
       new Wall(this.context, 120, 520, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 160, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 160, 600, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 160, 640, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
       //Pared intermedia lateral derecho
-      new Wall(this.context, 640, 160, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(4), color: 'blue' }),
+      new Wall(this.context, 640, 160, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 640, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 640, 240, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 640, 280, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
       new Wall(this.context, 680, 280, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 640, 360, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(3), color: 'blue' }),
+      new Wall(this.context, 640, 360, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 640, 400, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 640, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
       new Wall(this.context, 680, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
-      new Wall(this.context, 640, 520, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(4), color: 'blue' }),
+      new Wall(this.context, 640, 520, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
       new Wall(this.context, 680, 520, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1) }),
+      new Wall(this.context, 640, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 640, 600, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
+      new Wall(this.context, 640, 640, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'blue' }),
       //Pared interna lateral izquierdo
-      new Wall(this.context, 240, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2), color: 'yellow' }),
-      new Wall(this.context, 240, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2), color: 'yellow' }),
-      new Wall(this.context, 240, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2), color: 'yellow' }),
-      new Wall(this.context, 240, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2), color: 'yellow' }),
+      new Wall(this.context, 240, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 240, 240, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 240, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 240, 360, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 240, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 240, 480, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 240, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 240, 600, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
       //Pared interna lateral derecho
-      new Wall(this.context, 560, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2), color: 'yellow' }),
-      new Wall(this.context, 560, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2), color: 'yellow' }),
-      new Wall(this.context, 560, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2), color: 'yellow' }),
-      new Wall(this.context, 560, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(2), color: 'yellow' }),
+      new Wall(this.context, 560, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 560, 240, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 560, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 560, 360, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 560, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 560, 480, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 560, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 560, 600, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
       //Pared interna lateral inferior
-      new Wall(this.context, 320, 560, { width: WALLS_CONFIGURATION.getSizeWalls(5), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 320, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 360, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 400, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 440, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 480, 560, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
       new Wall(this.context, 320, 600, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
       new Wall(this.context, 480, 600, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
       //Pared interna lateral superior
-      new Wall(this.context, 320, 240, { width: WALLS_CONFIGURATION.getSizeWalls(5), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 320, 240, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 360, 240, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 400, 240, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 440, 240, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 480, 240, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
       new Wall(this.context, 320, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
       new Wall(this.context, 480, 200, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
       //Jaula central
-      new Wall(this.context, 320, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(5), color: 'yellow' }),
-      new Wall(this.context, 480, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(5), color: 'yellow' }),
-      new Wall(this.context, 320, 480, { width: WALLS_CONFIGURATION.getSizeWalls(5) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
-      new Wall(this.context, 320, 320, { width: WALLS_CONFIGURATION.getSizeWalls(2) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
-      new Wall(this.context, 440, 320, { width: WALLS_CONFIGURATION.getSizeWalls(2) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 320, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 320, 360, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 320, 400, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 320, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 480, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 480, 360, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 480, 400, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 480, 440, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 320, 480, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 360, 480, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 400, 480, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 440, 480, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 480, 480, { width: WALLS_CONFIGURATION.getSizeWalls(1), height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 360, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
+      new Wall(this.context, 440, 320, { width: WALLS_CONFIGURATION.getSizeWalls(1) , height: WALLS_CONFIGURATION.getSizeWalls(1), color: 'yellow' }),
     ];
     this.fill();
   }
@@ -93,8 +205,9 @@ class Game {
       this.clearItems();
       this.move();
       this.collisions();
-      this.draw();      
-    }, 1000 / FPS)
+      this.draw();
+      this.win();
+    }, 1000 / FPS);
   }
 
   clear () {
@@ -106,9 +219,11 @@ class Game {
   }
 
   draw() {
-    this.pacman.draw();
     this.maze.forEach(wall => wall.draw());
-    this.items.forEach(point => point.draw());
+    this.items.forEach(point => {
+      point.draw()
+    });
+    this.pacman.draw();
   }
 
   move() {
@@ -119,7 +234,6 @@ class Game {
     this.pacman.checkCollisions(this.maze);
     this.items.forEach(item => {
       if (item.collision(this.pacman)) {
-        console.info({comida: 'ñam', item})
         item.hasEaten()
       }
     });
@@ -411,5 +525,9 @@ class Game {
   pause() {
     clearInterval(this.intervalId);
     this.intervalId = null;
+  }
+
+  win() {
+    if (!this.items.length) window.location.reload();
   }
 }

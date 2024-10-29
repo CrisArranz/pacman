@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", () => {
   const game = new Game('pacman-board');
-
+  game.start();
   document.getElementById("start-btn").addEventListener("click", () => {
     game.start();
   });
