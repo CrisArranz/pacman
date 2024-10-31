@@ -21,7 +21,11 @@ body {
   background-color: black;
 }
 
-.container__board {
+.hidden {
+  display: none!important;
+}
+
+.container__homepage {
   height: 100vh;
   display: flex;
   gap: 10px;
@@ -29,18 +33,65 @@ body {
   align-items: center;
 }
 
-.container__actions {
+.container__info {
+  width: 840px;
+  height: 840px;
+  font-family: 'pacman-numbers';
+  background-image: url(../images/wallpaper/pacman-wallpaper.gif);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+  border: 40px solid white;
+  border-radius: 25px;
+}
+
+.container__actions {
+  font-family: 'pacman-letter';
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  color: yellow;
+}
+
+#start-btn {
+  font-size: 2rem;
+}
+
+.container__actions span {
+  transition: 0.25s ease-in-out;
+}
+
+.container__actions span:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#logo {
+  width: 600px;
+}
+
+.container__board {
+  height: 100vh;
+  display: flex;
+  position: relative;
   gap: 10px;
   justify-content: center;
   align-items: center;
 }
 
 .container__stadistics {
+  position: absolute;
+  left: 350px;
+  top: 50px;
   display: flex;
   flex-direction: column;
   align-self: flex-start;
-  margin-top: 3rem;
   color: white;
   row-gap: 2.5rem;
 }
@@ -72,6 +123,7 @@ body {
 }
 
 canvas {
+  border-radius: 25px;
   border: 40px solid white;
   margin: auto 0;
 }

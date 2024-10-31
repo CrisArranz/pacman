@@ -246,6 +246,7 @@ class Game {
 
   move() {
     this.pacman.move();
+    //this.ghosts.forEach(ghost => ghost.move(this.maze, this.pacman))
   }
 
   collisions() {
@@ -574,11 +575,9 @@ class Game {
   }
 
   addGhost() {
-    this.ghosts.push(new Ghost(this.context, 360, 360));
     this.ghosts.push(new Ghost(this.context, 400, 400));
     this.ghosts.push(new Ghost(this.context, 440, 440));
     this.ghosts.push(new Ghost(this.context, 360, 440));
-    this.ghosts.push(new Ghost(this.context, 440, 360));
   }
 
   pause() {
