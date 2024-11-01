@@ -11,22 +11,37 @@ class Pacman extends Character {
       PACMAN_CONFIGURATION.images
     );
 
-    this.movements = {
-      up: false,
-      down: false,
-      right: false,
-      left: false
-    };
-
     this.canMove = true;
+    this.canLoseLives = true;
 
     this.lives = 3;
+
+    this.tickLives = 0;
   }
   
 
   draw() {
     const typeMovement = Object.keys(this.movements).filter(movement => this.movements[movement])[0] ?? 'left';
     super.draw(typeMovement);
+  }
+
+  checkCollisions(maze, characters) {
+    super.checkCollisions(maze);
+    if (!!characters.length && this.canLoseLives) {
+      if (characters.some(character => super.checkCollisionCharacter(character))) {
+        if (this.canLoseLives) {
+          this.lives--;
+          this.canLoseLives = false;
+        }
+      }
+    }
+    if (!this.canLoseLives) {
+      this.tickLives++;
+      if (this.tickLives > 90) {
+        this.tickLives = 0;
+        this.canLoseLives = true;
+      }
+    }
   }
 
   onKeyDown({ keyCode }) {

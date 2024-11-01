@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./assets/css/styles.css" />
   </head>
   <body>
-    <section class="container__homepage">
+    <section id="homepage" class="container__homepage">
       <section class="container__info">
-        <img id="logo" src="assets/images/wallpaper/logo.png" />
+        <img id="logo" src="./assets/images/wallpaper/logo.png" />
         <section class="container__actions">
           <span id="control-btn">CONTROLES</span>
           <span id="start-btn">INICIAR</span>
@@ -18,7 +18,7 @@
         </section>
       </section>
     </section>
-    <section class="container__board hidden">
+    <section id="board" class="container__board hidden">
       <container class="container__stadistics">
         <section class="container__stadistics__score">
           <span class="container__stadistics__score--message">SCORE</span>
@@ -31,10 +31,19 @@
       </container>
       <canvas id="pacman-board" width="840" height="840"></canvas>
     </section>
+    <section id="game-over" class="container__game-over hidden">
+      <section class="container__game-over--info">
+        <section class="container__game-over--buttons">
+          <span id="exit-btn">EXIT</span>
+          <span id="restart-btn">RESTART</span>
+        </section>
+      </section>
+    </section>
     <script src="./assets/js/contanst.js"></script>
     <script src="./assets/js/models/drawler/piccaso.js"></script>
     <script src="./assets/js/models/drawler/nonAnimatedSprites.js"></script>
     <script src="./assets/js/models/drawler/animatedSprites.js"></script>
+    <script src="./assets/js/models/items/lives.js"></script>
     <script src="./assets/js/models/items/item.js"></script>
     <script src="./assets/js/models/items/dot.js"></script>
     <script src="./assets/js/models/items/powerUp.js"></script>

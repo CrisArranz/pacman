@@ -1,5 +1,5 @@
 class Game {
-  constructor(canvasId) {
+  constructor(canvasId, restartGame, exitGame) {
     this.context = document.getElementById(canvasId).getContext("2d");
 
     this.pacman = new Pacman(this.context);
@@ -203,13 +203,13 @@ class Game {
 
     this.points = 0;
     this.score = document.getElementById("score");
-    this.lives = document.getElementById("lives");
+    this.lives = new Lives(this.pacman.lives);
     this.score.innerText = this.points.toString().padStart(7, '0');
-    this.lives.innerText = [...Array(this.pacman.lives).fill('c')].join().replaceAll(',', '  ');
-
-    console.log()
 
     this.fill();
+
+    this.restartGame = restartGame;
+    this.exitGame = exitGame;
   }
 
   start() {
@@ -222,6 +222,7 @@ class Game {
       this.draw();
       this.addFruit();
       this.win();
+      this.lose();
     }, 1000 / FPS);
   }
 
@@ -242,15 +243,17 @@ class Game {
       ghost.draw()
     });
     this.pacman.draw();
+    this.lives.draw(this.pacman.lives);
   }
 
   move() {
     this.pacman.move();
-    this.ghosts.forEach(ghost => ghost.move())
+    this.ghosts.forEach(ghost => ghost.move(this.pacman))
   }
 
   collisions() {
-    this.pacman.checkCollisions(this.maze);
+    this.pacman.checkCollisions(this.maze, this.ghosts);
+    this.ghosts.forEach(ghost => ghost.checkCollisions(this.maze));
     this.items.forEach(item => {
       if (item.collision(this.pacman)) {
         item.hasEaten();
@@ -586,5 +589,22 @@ class Game {
   win() {
     const dots = this.items.filter(item => item instanceof Dot ||item instanceof PowerUp);
     if (!dots.length) window.location.reload();
+  }
+
+  lose() {
+    if (this.pacman.lives === 0) {
+      this.pause();
+      document.querySelector(".container__board").classList.add("hidden");
+      document.querySelector(".container__game-over").classList.remove("hidden");
+      const restartButton = document.getElementById("restart-btn");
+      restartButton.addEventListener("click", () => {
+        !!this.restartGame && this.restartGame();
+      });
+
+      const exitButton = document.getElementById("exit-btn");
+      exitButton.addEventListener("click", () => {
+        !!this.exitGame && this.exitGame();
+      });
+    }
   }
 }

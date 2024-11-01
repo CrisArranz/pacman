@@ -33,6 +33,47 @@ body {
   align-items: center;
 }
 
+.container__game-over {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container__game-over--info{
+  width: 840px;
+  height: 840px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-image: url(../images/game-over/game-over.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 40px solid white;
+  border-radius: 25px;
+}
+
+.container__game-over span {
+  font-family: 'pacman-letter';
+  font-size: 3.5rem;
+  color: yellow;;
+  transition: 0.25s ease-in-out;
+  margin-bottom: 5rem;
+}
+
+.container__game-over span:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.container__game-over--buttons {
+  display: flex;
+  gap: 3.5rem;
+}
+
 .container__info {
   width: 840px;
   height: 840px;
@@ -110,6 +151,7 @@ body {
   font-family: 'pacman-heads';
   color: yellow;
   min-width: 90px;
+  min-height: 32px;
   text-align: start;
   border: 1px solid white;
   padding: 10px;
@@ -126,4 +168,5 @@ canvas {
   border-radius: 25px;
   border: 40px solid white;
   margin: auto 0;
+  position: relative;
 }

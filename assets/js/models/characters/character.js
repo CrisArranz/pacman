@@ -5,6 +5,13 @@ class Character extends AnimatedSprites {
     this.velocityX = 0;
     this.velocityY = 0;
 
+    this.movements = {
+      up: false,
+      down: false,
+      right: false,
+      left: false
+    };
+
     this.tickVelocity = 0;
   }
 
@@ -38,6 +45,17 @@ class Character extends AnimatedSprites {
   }
 
   checkCollisions(maze) {
+    this.checkCollisionMaze(maze);
+  }
+
+  checkCollisionCharacter(character) {
+    return this.positionX + this.width >= character.positionX && 
+      character.positionX + character.width >= this.positionX &&
+      this.positionY + this.height >= character.positionY && 
+      character.positionY + character.height >= this.positionY;
+  }
+
+  checkCollisionMaze(maze) {
     const wall = maze.find(wall => wall.checkCollision(this));
     
     if (wall) {
