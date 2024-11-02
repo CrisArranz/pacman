@@ -227,7 +227,11 @@ class Game {
   }
 
   clear () {
+    this.context.save();
     this.context.clearRect(0, 0, this.context.canvas.width, this.context.canvas.height);
+    this.context.fillRect(0, 0, this.context.canvas.width, this.context.canvas.height);
+    this.context.fillStyle = 'black';
+    this.context.restore();
   }
 
   clearItems() {
